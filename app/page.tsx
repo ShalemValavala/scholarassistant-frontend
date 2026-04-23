@@ -122,13 +122,19 @@ const handlePayment = () => {
     <div>
 
       {/* Navbar */}
-      <a href="/about">About</a>
-<a href="/services">Services</a>
-<a href="/contact">Contact</a>
-      <div className="navbar">
-        <div className="logo">ScholarAssistant</div>
-        <button className="btn" onClick={handleLogin}>Admin Login</button>
-      </div>
+    <div className="navbar">
+  <div className="logo">ScholarAssistant</div>
+
+  <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/contact">Contact</a>
+
+    <button className="btn" onClick={handleLogin}>
+      Admin Login
+    </button>
+  </div>
+</div>
 
       {/* Hero */}
       <div className="hero">
