@@ -84,7 +84,7 @@ const handlePayment = () => {
   }
 
   const options = {
-    key: "rzp_test_xxxxx",
+    key: "rzp_live_SguADNRb509bnc",
     amount: 1000 * 100,
     currency: "INR",
     name: "ScholarAssistant",
