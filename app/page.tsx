@@ -75,23 +75,29 @@ export default function Home() {
   };
 
   // Payment
-  const handlePayment = () => {
-    const options = {
-      key: "rzp_test_SgsMNB0oYj8a8P",
-      amount: 1000 * 100,
-      currency: "INR",
-      name: "ScholarAssistant",
+const handlePayment = () => {
+  if (typeof window === "undefined") return;
 
-      handler: function (response: any) {
-        setPaid(true);
-        setPaymentId(response.razorpay_payment_id);
-        alert("✅ Payment successful");
-      },
-    };
+  if (!(window as any).Razorpay) {
+    alert("Razorpay not loaded");
+    return;
+  }
 
-    const rzp = new (window as any).Razorpay(options);
-    rzp.open();
+  const options = {
+    key: "rzp_test_xxxxx",
+    amount: 1000 * 100,
+    currency: "INR",
+    name: "ScholarAssistant",
+
+    handler: function (response: any) {
+      setPaid(true);
+      setPaymentId(response.razorpay_payment_id);
+    },
   };
+
+  const rzp = new (window as any).Razorpay(options);
+  rzp.open();
+};
 
   // Fetch orders
   useEffect(() => {
