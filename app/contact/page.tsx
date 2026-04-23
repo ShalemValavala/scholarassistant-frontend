@@ -6,24 +6,31 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div style={{ padding: "40px", maxWidth: "700px", margin: "auto" }}>
-      <h1>Contact Us</h1>
+    <div className="page-container">
+      <h1 className="page-title">Contact Us</h1>
 
-      <p>
-        Have questions or need help with your research paper? Reach out to us.
-      </p>
+      <div className="card-box">
+        <p>
+          Need help with your research paper? Reach out to us anytime.
+        </p>
+      </div>
 
-      <h2>Email</h2>
-      <p>Shalemvalavala@gmail.com</p>
+      <div className="section">
+        <h2>📧 Email</h2>
+        <p>Shalemvalavala@gmail.com</p>
+      </div>
 
-      <h2>Services</h2>
-      <p>
-        We provide research editing, plagiarism reduction, AI rewriting, and
-        academic support services.
-      </p>
+      <div className="section">
+        <h2>⏱ Response Time</h2>
+        <p>We usually respond within 24 hours.</p>
+      </div>
 
-      <h2>Response Time</h2>
-      <p>We usually respond within 24 hours.</p>
+      <div className="section">
+        <h2>📌 Services</h2>
+        <p>
+          Editing, plagiarism reduction, AI rewriting, and research support.
+        </p>
+      </div>
     </div>
   );
 }
