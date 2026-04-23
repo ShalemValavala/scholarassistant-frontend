@@ -9,6 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+<meta name="google-site-verification" content="h9NT6PjWz7_w2qIcIwqZhzzyKJN129RygjJ9xeB-bO0" />
+</head>
       <body>
         {/* ✅ Razorpay Script */}
         <Script
