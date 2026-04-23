@@ -122,6 +122,9 @@ const handlePayment = () => {
     <div>
 
       {/* Navbar */}
+      <a href="/about">About</a>
+<a href="/services">Services</a>
+<a href="/contact">Contact</a>
       <div className="navbar">
         <div className="logo">ScholarAssistant</div>
         <button className="btn" onClick={handleLogin}>Admin Login</button>
