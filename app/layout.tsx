@@ -10,6 +10,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>ScholarAssistant - AI Research Assistant</title>
+<meta
+  name="description"
+  content="AI-powered research paper editing, plagiarism reduction, and academic writing support."
+/>
 <meta name="google-site-verification" content="h9NT6PjWz7_w2qIcIwqZhzzyKJN129RygjJ9xeB-bO0" />
 </head>
       <body>
