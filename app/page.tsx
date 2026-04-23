@@ -123,7 +123,7 @@ const handlePayment = () => {
 
       {/* Navbar */}
     <div className="navbar">
-  <div className="logo">ScholarAssistant</div>
+<img src="/logo.png" alt="ScholarAssistant Logo" className="logo-img" />
 
   <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
     <a href="/about">About</a>
