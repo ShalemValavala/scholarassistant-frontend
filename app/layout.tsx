@@ -1,6 +1,25 @@
 import "./globals.css";
-import React from "react";
 import Script from "next/script";
+
+export const metadata = {
+  title: "ScholarAssistant | AI Research Writing & Editing Services",
+  description:
+    "AI-powered research paper editing, plagiarism reduction, AI content rewriting, and academic guidance. Improve your research papers instantly.",
+  keywords: [
+    "research paper editing",
+    "plagiarism removal",
+    "AI rewriting tool",
+    "academic writing help",
+    "research assistant AI"
+  ],
+  openGraph: {
+    title: "ScholarAssistant",
+    description: "AI-powered research writing platform",
+    url: "https://scholarassistant-frontend.vercel.app",
+    siteName: "ScholarAssistant",
+    type: "website",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -9,21 +28,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>ScholarAssistant - AI Research Assistant</title>
-<meta
-  name="description"
-  content="AI-powered research paper editing, plagiarism reduction, and academic writing support."
-/>
-<meta name="google-site-verification" content="h9NT6PjWz7_w2qIcIwqZhzzyKJN129RygjJ9xeB-bO0" />
-</head>
       <body>
-        {/* ✅ Razorpay Script */}
         <Script
           src="https://checkout.razorpay.com/v1/checkout.js"
           strategy="beforeInteractive"
         />
-        
         {children}
       </body>
     </html>
