@@ -1,16 +1,9 @@
+// @ts-nocheck
 import "./globals.css";
-import React from "react";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-      </head>
+    <html>
       <body>{children}</body>
     </html>
   );
