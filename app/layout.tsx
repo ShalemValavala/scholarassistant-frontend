@@ -1,10 +1,23 @@
-// @ts-nocheck
 import "./globals.css";
+import React from "react";
+import Script from "next/script";
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html>
-      <body>{children}</body>
+    <html lang="en">
+      <body>
+        {/* ✅ Razorpay Script */}
+        <Script
+          src="https://checkout.razorpay.com/v1/checkout.js"
+          strategy="beforeInteractive"
+        />
+        
+        {children}
+      </body>
     </html>
   );
 }
